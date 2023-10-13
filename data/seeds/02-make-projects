@@ -2,4 +2,6 @@
 
 exports.seed = function(knex) {
 //leave empty for now
+
+//work on this now
 };

@@ -11,7 +11,7 @@ server.use('/api/projects', projectsRouter)
 
 // catch all
 server.use('*', (req,res) =>{
-    res.json({api: 'up'})
+    res.json({api: 'api is up *'})
 })
 
 module.exports = server

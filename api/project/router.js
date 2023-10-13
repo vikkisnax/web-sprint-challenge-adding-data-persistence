@@ -1,6 +1,15 @@
 // build your `/api/projects` router here
 const router = require('express').Router()
 //model - add later
+const Projects = require('./model')
+
+router.get('/', (req, res, next)=>{
+    Projects.getProject()
+    .then(resource => {
+        res.status(200).json(resource)
+    })
+    .catch(next)
+})
 
 
 //error handling mw bc no mw file 

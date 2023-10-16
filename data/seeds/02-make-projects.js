@@ -32,7 +32,7 @@ const resources = [
 
 const tasks = [
   //Watercolors
-  { task_description: 'Pick out a picture for to paint.',
+  { task_description: 'Pick out a picture to paint.',
     task_notes: 'It\'s ok to make mistakes.',
     task_completed: 1,
     project_id: 1

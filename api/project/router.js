@@ -1,10 +1,10 @@
 // build your `/api/projects` router here
 const router = require('express').Router()
-//model - add later
+//model - add after setup
 const Projects = require('./model')
 
-router.get('/', (req, res, next)=>{
-    Projects.getProject()
+router.get('/:project_id', (req, res, next)=>{
+    Projects.getProjectById(req.params.project_id)
     .then(resource => {
         res.status(200).json(resource)
     })

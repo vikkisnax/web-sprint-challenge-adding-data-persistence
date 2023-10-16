@@ -1,11 +1,11 @@
 const projects = [
   { project_name: 'Watercolors', 
     project_description: 'Ideas: flower, fruit...', 
-    project_completed: 1 
+    project_completed: 0
   },
   { project_name: 'Crochet', 
     project_description: 'Ideas: coaster, blanket...', 
-    project_completed:  0
+    project_completed:  1
   }
 ]
 

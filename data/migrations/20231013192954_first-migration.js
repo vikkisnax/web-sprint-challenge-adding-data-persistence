@@ -3,8 +3,8 @@ exports.up = async function(knex) {
     .createTable('projects', table => {        
         table.increments('project_id');
         table.string('project_name', 200)
-            .notNullable()
-        table.string('project_description', 500)
+            .notNullable();
+        table.string('project_description', 500);
         table.integer('project_completed')
             .defaultTo(0);
     })

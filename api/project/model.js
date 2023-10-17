@@ -1,4 +1,3 @@
-
 // build your `Project` model here
 
 //db wrapper
@@ -13,5 +12,17 @@ async function getProjectById(project_id){
     return projectRows;
 }
 
+async function createProject(project){
 
-module.exports = { getProjectById }
+    const [ project_id ] = await db('projects').insert(project);
+
+
+    const newProject = await db('projects as p')
+        .select('p.project_id', 'p.project_name', 'p.project_description', 'p.project_completed')
+        .where('p.project_id', project_id)
+        .first()
+
+    return newProject;
+}
+
+module.exports = { getProjectById, createProject }

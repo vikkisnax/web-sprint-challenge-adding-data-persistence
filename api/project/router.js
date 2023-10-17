@@ -20,6 +20,15 @@ router.get('/:project_id', (req, res, next)=>{
     .catch(next)
 })
 
+router.post('/', (req, res, next) => {
+    console.log('req.body:', req.body)
+    Projects.createProject(req.body)
+        .then(project => {
+            res.status(201).json(project)
+        })
+        .catch(next);
+})
+
 
 //error handling mw bc no mw file 
 router.use((err, req, res, next)=>{ //eslint-disable-line

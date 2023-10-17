@@ -1,11 +1,11 @@
 const projects = [
   { project_name: 'Watercolors', 
     project_description: 'Ideas: flower, fruit...', 
-    project_completed: 1
+    project_completed: true
   },
   { project_name: 'Crochet', 
     project_description: 'Ideas: coaster, blanket...', 
-    project_completed: 0
+    project_completed: false
   }
 ]
 
@@ -34,23 +34,23 @@ const tasks = [
   //Watercolors
   { task_description: 'Pick out a picture to paint.',
     task_notes: 'It\'s ok to make mistakes.',
-    task_completed: 1,
+    task_completed: true,
     project_id: 1
   },
   { task_description: 'Wash your brushes and water cup.',
     task_notes: 'Wash your brush with cool water only.',
-    task_completed: 1,
+    task_completed: true,
     project_id: 1 
   },
   //Crochet
   { task_description: 'Look up a crochet pattern.',
     task_notes: 'It\'s ok to make mistakes.',
-    task_completed: 0,
+    task_completed: false,
     project_id: 2
   },
   { task_description: 'Stick your hook inside the ball of yarn if you did not finish or fasten off your project if you did.',
     task_notes: 'Don\'t let your pet get to it!',
-    task_completed: 0,
+    task_completed: false,
     project_id: 2
   }
   //fk will be project_id ^

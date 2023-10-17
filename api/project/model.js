@@ -3,6 +3,11 @@
 //db wrapper
 const db = require('../../data/dbConfig')
 
+//writing this on my own bc i want to see a list of projects
+async function getProject(){
+    return db('projects')
+}
+
 
 // we want to return a response body with project id, name, description, completed
 async function getProjectById(project_id){
@@ -23,4 +28,4 @@ async function createProject(project){
     return newProject;
 }
 
-module.exports = { getProjectById, createProject }
+module.exports = { getProject, getProjectById, createProject }

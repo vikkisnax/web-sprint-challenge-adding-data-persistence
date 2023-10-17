@@ -36,7 +36,7 @@ router.post('/', (req, res, next) => {
 //error handling mw bc no mw file 
 router.use((err, req, res, next)=>{ //eslint-disable-line
     res.status(500).json({
-        customMessage: 'something went wrong inside the recipes router',
+        customMessage: 'something went wrong inside the projects router',
         message:err.message,
         stack: err.stack,
     })

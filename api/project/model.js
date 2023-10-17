@@ -13,9 +13,7 @@ async function getProjectById(project_id){
 }
 
 async function createProject(project){
-
     const [ project_id ] = await db('projects').insert(project);
-
 
     const newProject = await db('projects as p')
         .select('p.project_id', 'p.project_name', 'p.project_description', 'p.project_completed')

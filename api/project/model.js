@@ -25,7 +25,10 @@ async function createProject(project){
         .where('p.project_id', project_id)
         .first()
 
-    return newProject;
+    return {
+        newProject,
+        project_completed: Boolean(newProject.project_completed)
+    };// Convert to boolean
 }
 
 module.exports = { getProject, getProjectById, createProject }

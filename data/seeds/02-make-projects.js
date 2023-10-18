@@ -5,7 +5,7 @@ const projects = [
   },
   { project_name: 'Crochet', 
     project_description: 'Ideas: coaster, blanket...', 
-    project_completed: false
+    project_completed: true
   }
 ]
 
@@ -32,27 +32,27 @@ const resources = [
 
 const tasks = [
   //Watercolors
-  { task_description: 'Pick out a picture to paint.',
-    task_notes: 'It\'s ok to make mistakes.',
-    task_completed: true,
+  { task_description: 'Do foo',
+    task_notes: null,
+    task_completed: false,
     project_id: 1
   },
-  { task_description: 'Wash your brushes and water cup.',
-    task_notes: 'Wash your brush with cool water only.',
-    task_completed: true,
+  { task_description: 'Do bar',
+    task_notes: 'Use Postman!',
+    task_completed: false,
     project_id: 1 
   },
   //Crochet
-  { task_description: 'Look up a crochet pattern.',
-    task_notes: 'It\'s ok to make mistakes.',
-    task_completed: false,
+  { task_description: 'Do baz',
+    task_notes: 'Have fun!',
+    task_completed: true,
     project_id: 2
   },
-  { task_description: 'Stick your hook inside the ball of yarn if you did not finish or fasten off your project if you did.',
-    task_notes: 'Don\'t let your pet get to it!',
-    task_completed: false,
-    project_id: 2
-  }
+  // { task_description: 'Stick your hook inside the ball of yarn if you did not finish or fasten off your project if you did.',
+  //   task_notes: 'Don\'t let your pet get to it!',
+  //   task_completed: false,
+  //   project_id: 2
+  // }
   //fk will be project_id ^
 ]
 

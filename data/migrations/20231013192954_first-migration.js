@@ -20,7 +20,7 @@ exports.up = async function(knex) {
         table.string('task_description', 500)
             .notNullable();
         table.string('task_notes', 500)
-            .notNullable();
+            // .notNullable();
         table.boolean('task_completed')
             .defaultTo(false);
         //fk
